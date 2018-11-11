@@ -3,31 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>After Hello World</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style01.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+  <script src="menunav.js" type="text/javascript"></script>
 </head>
 
 <body>
 
 <div class="menu">
-	<ul class="nav">
-	<li><a class="active" href="#home">Home</a></li>
-	<li><a href="#about">About</a></li>
-	<li><a href="#activities">Activities ￬</a>
-		<ul class="hidden">
-                <li><a href="#webdevelopment">Web development</a></li>
-                <li><a href="#english">English</a></li>
-                <li><a href="#others">Others</a></li>
-		</ul>
-	</li>
-	<li><a href="#contact">Contact</a></li>
-	<li#<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"></i>
-	</ul>
+	<div class="navbar">
+	<a><b>After Hello World</b></a>
+	<a class="active" href="#home">Home</a>
+	<a href="#about">About</a>
+	<div class="dropdown">
+		<button class="dropbtn">
+			<a href="#activities">Activities </a>
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+                <a href="#webdevelopment">Web development</a>
+                <a href="#english">English</a>
+                <a href="#others">Others</a>
+		</div>
+	</div>
+	<a href="#contact">Contact</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i></a>
+	</div>
 </div>
 <div class="intro">
 	<h1>Hello, I'm Lilla!</h1>
-	<p>A beginner web developer</p>
+	<p>A beginner hobby developer</p>
 	<div id="frame"><img src="me.jpg"></div>
 </div>
 </body>
