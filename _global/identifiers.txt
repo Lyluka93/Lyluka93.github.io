@@ -1,0 +1,11 @@
+NavMenuBar
+	topnav -> c_NavMenuBar
+	active -> c_ActualPageNavMenuButton
+	icon -> c_OpenNavMenuIcon
+	responsive -> c_ResponsiveNavMenuBar
+
+	myTopnav -> i_NavMenuBar
+
+Responsive:
+	myFunction() -> OpenResponsiveMenu()
+	
