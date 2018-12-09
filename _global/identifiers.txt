@@ -8,4 +8,16 @@ NavMenuBar
 
 Responsive:
 	myFunction() -> OpenResponsiveMenu()
+
+
+Tabs:	
+	tablinks  -> c_MenuTabLinks
+	tabcontent -> c_MenuTabContent
+	London -> i_TabHome
+	Paris -> i_TabWeb
+	Tokyo -> i_TabEnglish
+	+ i_TabContact
+	
+	openCity() -> OpenMenuTabs()
+
 	

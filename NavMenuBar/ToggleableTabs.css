@@ -1,0 +1,7 @@
+/* Styling the tabs of menu */
+
+.c_MenuTabContent{
+	display: none;
+	padding: 6px 12px;
+}
+

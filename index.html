@@ -6,19 +6,37 @@
   <title>After Hello World</title>
   <link rel="stylesheet" href="_global/bootstrap.min.css" />
   <link rel="stylesheet" href="NavMenuBar/NavMenuBar.css" />
+   <link rel="stylesheet" href="NavMenuBar/ToggleableTabs.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="_global/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
   <script src="NavMenuBar/NavMenuBar.js" type="text/javascript"></script>
-</head>
+  <script src="NavMenuBar/ToggleableTabs.js" type="text/javascript"></script>
+  </head>
 <body>
   <div class="c_NavMenuBar" id="i_NavMenuBar">
-	<a href="#home" class="c_ActualPageNavMenuButton">Home</a>
-	<a href="#news">Web</a>
-	<a href="#contact">English</a>
-	<a href="#about">Contact</a>
+	<a href="#home" class="c_MenuTabLinks" onclick="OpenMenuTabs(event, 'i_TabHome')">Home</a>
+	<a href="#web" class="c_MenuTabLinks" onclick="OpenMenuTabs(event, 'i_TabWeb')">Web</a>
+	<a href="#english" class="c_MenuTabLinks" onclick="OpenMenuTabs(event, 'i_TabEnglish')">English</a>
+	<a href="#contact" class="c_MenuTabLinks" onclick="OpenMenuTabs(event, 'i_TabContact')">Contact</a>
 	<a href="javascript:void(0);" class="c_OpenNavMenuIcon" onclick="OpenResponsiveMenu()">
 		<i class="fa fa-bars"></i>
 	</a>
+  </div>
+  <div id="i_TabHome" class="c_MenuTabContent">
+	<h3> Blog's start </h3>
+	<p> Hello,this is a new blog.</p>
+  </div>
+    <div id="i_TabWeb" class="c_MenuTabContent">
+	<h3> Hobby WebDev </h3>
+	<p> Latest blog posts of hobby webdevelopment.</p>
+  </div>
+    <div id="i_TabEnglish" class="c_MenuTabContent">
+	<h3> English </h3>
+	<p> Learning English is fun.</p>
+  </div>
+    <div id="i_TabContact" class="c_MenuTabContent">
+	<h3> Contact </h3>
+	<p> I'll upload some personal details here.</p>
   </div>
   <div style="padding-left:16px">
   </div>
