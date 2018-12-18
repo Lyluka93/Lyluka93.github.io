@@ -20,4 +20,14 @@ Tabs:
 	
 	openCity() -> OpenMenuTabs()
 
+SideBar: 
+	mySidebar -> i_ShortIntroSideBar
+	sidebar -> c_ShortIntroSideBar
+	closebtn -> c_CloseSideBar
+	openbtn -> c_OpenSlideBar
+	main  -> i_MainContent
+
+	closeNav() -> CloseSideBar()
+	openNav() -> OpenSideBar()
+
 	
