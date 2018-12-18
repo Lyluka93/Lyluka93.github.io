@@ -16,6 +16,7 @@ Tabs:
 	London -> i_TabHome
 	Paris -> i_TabWeb
 	Tokyo -> i_TabEnglish
+
 	+ i_TabContact
 	
 	openCity() -> OpenMenuTabs()
@@ -23,11 +24,14 @@ Tabs:
 SideBar: 
 	mySidebar -> i_ShortIntroSideBar
 	sidebar -> c_ShortIntroSideBar
-	closebtn -> c_CloseSideBar
-	openbtn -> c_OpenSlideBar
+	closebtn -> c_CloseSideBarBtn
+	openbtn -> c_OpenSlideBarBtn
 	main  -> i_MainContent
 
 	closeNav() -> CloseSideBar()
 	openNav() -> OpenSideBar()
+
+Header: 
+	header -> c_TitleHeader
 
 	

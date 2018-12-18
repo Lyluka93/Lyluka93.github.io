@@ -15,6 +15,13 @@
   <script src="NavMenuBar/ToggleableTabs.js" type="text/javascript"></script>
   </head>
 <body>
+  <div class="c_TitleHeader">
+	<h1> After Hello World </h1>
+	<p> blog by Lilla Bende </p>
+	<button class="c_OpenSlideBarBtn" onclick="OpenSideBar()"> 
+   <i class="fa fa-angle-right"></i>
+   </button>
+  </div>
   <div class="c_NavMenuBar" id="i_NavMenuBar">
 	<a href="#home" class="c_MenuTabLinks" onclick="OpenMenuTabs(event, 'i_TabHome')">Home</a>
 	<a href="#web" class="c_MenuTabLinks" onclick="OpenMenuTabs(event, 'i_TabWeb')">Web</a>
@@ -25,14 +32,11 @@
 	</a>
   </div>
   <div id="i_ShortIntroSideBar" class="c_ShortIntroSideBar">
-	<a href="javascript:void(0)" class="c_CloseSideBar" onclick="CloseSideBar()"><i class="fa fa-angle-left"></i></a>
+	<a href="javascript:void(0)" class="c_CloseSideBarBtn" onclick="CloseSideBar()"><i class="fa fa-angle-left"></i></a>
 	<a href="#lillabende">Lilla Bende</a>
 	<img src="_global/me.jpg" alt="Lilla Bende" style="width:220px;height:200px;">
   </div>
   <div id="c_MainContent">
-   <button class="c_OpenSlideBar" onclick="OpenSideBar()"> 
-   <i class="fa fa-angle-right"></i>
-   </button>
   <div id="i_TabHome" class="c_MenuTabContent">
 	<h3> Blog's start </h3>
 	<p> Hello,this is a new blog.</p>

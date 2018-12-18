@@ -2,6 +2,19 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.c_TitleHeader {
+  padding: 20px;
+  text-align: center; 
+  background: #800080; 
+  color: white; 
+}
+
+/* Increase the font size of the <h1> element */
+.c_TitleHeader h1 {
+  font-size: 40px;
+}
+
 /* Add a black background color to the top navigation */
 .c_NavMenuBar {
     background-color: #333;
@@ -21,14 +34,15 @@ body {
 
 /* Change the color of links on hover */
 .c_NavMenuBar a:hover {
-    background-color: #8B008B;
+    background-color: #2E8B57;
     color: black;
 }
 
 /* Add an active class to highlight the current page */
 .c_ActualPageNavMenuButton {
-    background-color: #2E8B57;
+    background-color: #999999;
     color: white;
+	border: 3px black;
 }
 
 /* Hide the link that should open and close the c_NavMenuBar on small screens */
