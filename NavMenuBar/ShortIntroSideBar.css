@@ -1,5 +1,14 @@
 img {
-	border-radius: 50%;
+  border-radius: 50%;
+}
+
+#i_OpenSideBarBtnContainer {
+  padding: 7px;
+  max-width: 25px;
+  display: inline-block;
+  float: left;
+  background-color: #333;
+  z-index: 0;
 }
 
 .c_ShortIntroSideBar {
@@ -30,23 +39,29 @@ img {
 
 .c_ShortIntroSideBar .c_CloseSideBarBtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: 38px;
+  right: 20px;
   font-size: 36px;
   margin-left: 50px;
 }
 
 .c_OpenSideBarBtn {
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
-  background-color: #111;
+  background-color: #333;
   color: white;
-  padding: 10px 15px;
-  border: none;
-}
+  border: 0;
+  float: left;
+  padding-right: 10px;
+  }
+  
 
 .c_OpenSideBarBtn:hover {
   background-color: #444;
+}
+
+#SideBarTop {
+	display: inline-block;
 }
 
 #i_MainContent {

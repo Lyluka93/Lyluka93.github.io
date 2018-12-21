@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>After Hello World</title>
   <link rel="stylesheet" href="_global/bootstrap.min.css" />
   <link rel="stylesheet" href="NavMenuBar/NavMenuBar.css" />
@@ -16,9 +16,11 @@
   </head>
 <body>
   <div class="c_TitleHeader">
-	<h1> After Hello World </h1>
-	<p> blog by Lilla Bende </p>
-	<button class="c_OpenSlideBarBtn" onclick="OpenSideBar()"> 
+	<h1> After Hello World</h1>
+	<p> blog by Lilla Bende</p>
+  </div>
+  <div id="i_OpenSideBarBtnContainer">
+   <button class="c_OpenSideBarBtn" onclick="OpenSideBar()"> 
    <i class="fa fa-angle-right"></i>
    </button>
   </div>
@@ -32,9 +34,11 @@
 	</a>
   </div>
   <div id="i_ShortIntroSideBar" class="c_ShortIntroSideBar">
-	<a href="javascript:void(0)" class="c_CloseSideBarBtn" onclick="CloseSideBar()"><i class="fa fa-angle-left"></i></a>
-	<a href="#lillabende">Lilla Bende</a>
-	<img src="_global/me.jpg" alt="Lilla Bende" style="width:220px;height:200px;">
+	<div id="SideBarTop">
+	  <a href="#lillabende">Lilla Bende</a>
+	  <a href="javascript:void(0)" class="c_CloseSideBarBtn" onclick="CloseSideBar()" style="font-size:40px; padding-top: 20px;">&times;</a>
+	</div>
+	<img src="_global/me.jpg" alt="Lilla Bende" style="width:220px;height:200px; padding-left:8px;">
   </div>
   <div id="c_MainContent">
   <div id="i_TabHome" class="c_MenuTabContent">
