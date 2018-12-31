@@ -70,6 +70,9 @@ body {
     right: 0;
     top: 0;
   }
+   #i_ShortIntroSideBar {
+	   display: none;
+   }
   .c_NavMenuBar.c_ResponsiveNavMenuBar a {
     float: none;
     display: block;

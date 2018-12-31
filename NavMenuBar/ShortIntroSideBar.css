@@ -1,5 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
 img {
   border-radius: 50%;
+  max-height: 150px;
+  position: relative;
 }
 
 #i_OpenSideBarBtnContainer {
@@ -11,25 +17,24 @@ img {
   z-index: 0;
 }
 
+.c_ContentTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .c_ShortIntroSideBar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: inline-block;
 }
 
 .c_ShortIntroSideBar a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: block;
+  display: inline-block;
   transition: 0.3s;
 }
 
@@ -38,11 +43,10 @@ img {
 }
 
 .c_ShortIntroSideBar .c_CloseSideBarBtn {
-  position: absolute;
-  top: 38px;
-  right: 20px;
-  font-size: 36px;
-  margin-left: 50px;
+  display: inline-block;
+  top: 40px;
+  right: 10px;
+  font-size: 20px;
 }
 
 .c_OpenSideBarBtn {
@@ -62,15 +66,17 @@ img {
 
 #SideBarTop {
 	display: inline-block;
+	font-size: 18px;
 }
 
-#i_MainContent {
-  transition: margin-left .5s;
-  padding: 16px;
+
+
+.c_PicContainer {
+	display: inline-block;
+}
+.c_MainTabsContent {
+  flex: 80%; 
+  background-color: white; 
+  padding: 20px; 
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .c_ShortIntroSideBar {padding-top: 15px;}
-  .c_ShortIntroSideBar a {font-size: 18px;}
-}
